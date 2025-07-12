@@ -18,20 +18,12 @@
 <body>
     <div id="root"></div>
     <script type="module">
-        import Chatbot from './web.js'
-        
-        // Example initialization:
-        // If your .env contains:
-        // agent1=xyz789-uvw456,https://example.com
-        // support=abc123-def456,https://example.com
-        // salesbot=ghi123-jkl456,https://example.com
-        //
-        // Then use the environment variable name as chatflowid:
-        Chatbot.init({
-            chatflowid: 'agent1',    // or 'support', 'salesbot', etc.
-            apiHost: window.location.origin
-        })
-    </script>
+  import Chatbot from 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
+  Chatbot.init({
+    chatflowid: '0bf10034-033f-450c-9139-f5a9668563b8',
+    apiHost: 'https://cloud.flowiseai.com'
+  });
+</script>
 </body>
 
 </html>
